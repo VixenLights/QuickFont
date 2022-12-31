@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0-windows</TargetFramework>
+	  <AssemblyName>QuickFont</AssemblyName>
+	  <RootNamespace>QuickFont</RootNamespace>
+
+	  <UseWPF>true</UseWPF>
+	   <UseWindowsForms>true</UseWindowsForms>
+	   <ExtrasEnableImplicitWpfReferences>true</ExtrasEnableImplicitWpfReferences>
+	   <ExtrasEnableImplicitWinFormsReferences>true</ExtrasEnableImplicitWinFormsReferences>
+	   <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  
+	<ItemGroup>
+		<Page Remove="**/*.Template.xaml" />
+		<EmbeddedResource Include="**/*.Template.xaml" />
+
+		<None Remove="**/GeneratorParameters.json" />
+		<EmbeddedResource Include="**/GeneratorParameters.json" />
+	</ItemGroup>
+
+  
+	<ItemGroup>
+	  <None Remove="Shaders\simple.fs" />
+	  <None Remove="Shaders\simple.vs" />
+	  <None Remove="Shaders\simple_es.fs" />
+	  <None Remove="Shaders\simple_es.vs" />
+	</ItemGroup>
+
+  
+	<ItemGroup>
+	  <EmbeddedResource Include="Shaders\simple.fs" />
+	  <EmbeddedResource Include="Shaders\simple.vs" />
+	  <EmbeddedResource Include="Shaders\simple_es.fs" />
+	  <EmbeddedResource Include="Shaders\simple_es.vs" />
+	</ItemGroup>
+
+  
+	<ItemGroup>
+	  <PackageReference Include="OpenTK" Version="4.7.5">
+	    <IncludeAssets></IncludeAssets>
+	  </PackageReference>
+	</ItemGroup>
+
+  
+	<ItemGroup>
+	  <ProjectReference Include="..\SharpFontShared\SharpFont.csproj" />
+	</ItemGroup>
+</Project>

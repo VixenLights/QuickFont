@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using OpenTK;
+using OpenTK.Mathematics;
 
 namespace QuickFont
 {

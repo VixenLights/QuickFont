@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using OpenTK;
+using OpenTK.Mathematics;
 #if OPENGL_ES
 using OpenTK.Graphics.ES20;
 #else
 using OpenTK.Graphics.OpenGL4;
 #endif
+
+//using OpenTK.Graphics;
+
 
 namespace QuickFont
 {
@@ -51,7 +55,7 @@ namespace QuickFont
         /// </summary>
         static QVertexArrayObject()
         {
-            QVertexStride = BlittableValueType.StrideOf(default(QVertex));
+	        QVertexStride = Marshal.SizeOf(typeof(QVertex));
         }
 
         /// <summary>
@@ -60,7 +64,7 @@ namespace QuickFont
         /// <param name="state">The <see cref="QFontSharedState"/> to use</param>
         public QVertexArrayObject(QFontSharedState state)
         {
-            QFontSharedState = state;
+	        QFontSharedState = state;
 
             _vertices = new List<QVertex>(INITIAL_SIZE);
             _bufferMaxVertexCount = INITIAL_SIZE;

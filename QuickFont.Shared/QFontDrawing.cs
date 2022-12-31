@@ -5,6 +5,7 @@ using System.IO;
 using System.Reflection;
 using System.Linq;
 using OpenTK;
+using OpenTK.Mathematics;
 #if OPENGL_ES
 using OpenTK.Graphics.ES20;
 #else
@@ -210,6 +211,18 @@ namespace QuickFont
             var sharedState = new QFontSharedState(TextureUnit.Texture0, shaderVariables);
 
             _sharedState = sharedState;
+        }
+
+        /// <summary>
+        /// Disposes the static shared render state
+        /// </summary>
+        public static void DisposeStaticState()
+        {
+            if (_sharedState != null)
+            {
+                _sharedState.Dispose();
+                _sharedState = null;
+            }
         }
 
         /// <summary>
@@ -514,7 +527,7 @@ namespace QuickFont
     /// The shared state of the <see cref="QFontDrawing"/> object.
     /// This can be shared between different <see cref="QFontDrawing"/> objects
     /// </summary>
-    public class QFontSharedState
+    public class QFontSharedState : IDisposable
     {
         /// <summary>
         /// Creates a new instance of <see cref="QFontSharedState"/>
@@ -536,6 +549,38 @@ namespace QuickFont
         /// The shader variables of this shared state
         /// </summary>
         public ShaderLocations ShaderVariables { get; }
+
+        /// <summary>
+        /// Track whether <see cref="Dispose()"/> has been called
+        /// </summary>
+        private bool _disposed = false; // To detect redundant calls
+
+        /// <summary>
+        /// Releases unmanaged and managed resources.
+        /// </summary>
+        public void Dispose()
+        {
+            // Do not change this code. Put cleanup code in Dispose(bool disposing) below.
+            Dispose(true);
+        }
+
+        /// <summary>
+        /// Handles disposing objects
+        /// </summary>
+        /// <param name="disposing"></param>
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposed)
+            {
+                if (disposing)
+                {
+                    // Clean up program ID object
+                    GL.DeleteProgram(ShaderVariables.ShaderProgram);
+                }
+
+                _disposed = true;
+            }
+        }
     }
 
 }

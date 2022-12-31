@@ -1,5 +1,6 @@
 ﻿using OpenTK;
 using OpenTK.Graphics;
+using OpenTK.Mathematics;
 #if OPENGL_ES
 using OpenTK.Graphics.ES20;
 #else
@@ -69,7 +70,7 @@ namespace QuickFont
         /// </summary>
         public static void UpdateCurrentViewport()
         {
-            GraphicsContext.Assert();
+            //OpenTK.Graphics.GL.GraphicsContext.Assert();
             int[] viewportInts = new int[4];
 
             GL.GetInteger(GetPName.Viewport, viewportInts);
