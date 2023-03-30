@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickFont", "QuickFont.csproj", "{3A11ADC0-F012-4363-9B19-7784FB1BDEF2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpFont", "..\..\SharpFont\Source\SharpFontShared\SharpFont.csproj", "{9BD0116C-EA24-4A55-B5B6-BBC510208579}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3A11ADC0-F012-4363-9B19-7784FB1BDEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A11ADC0-F012-4363-9B19-7784FB1BDEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A11ADC0-F012-4363-9B19-7784FB1BDEF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD0116C-EA24-4A55-B5B6-BBC510208579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD0116C-EA24-4A55-B5B6-BBC510208579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD0116C-EA24-4A55-B5B6-BBC510208579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD0116C-EA24-4A55-B5B6-BBC510208579}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

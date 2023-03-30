@@ -1,0 +1,15 @@
+C:\QuickFont\QuickFont.Shared\bin\Debug\net6.0-windows\QuickFont.deps.json
+C:\QuickFont\QuickFont.Shared\bin\Debug\net6.0-windows\QuickFont.dll
+C:\QuickFont\QuickFont.Shared\bin\Debug\net6.0-windows\QuickFont.pdb
+C:\QuickFont\QuickFont.Shared\bin\Debug\net6.0-windows\SharpFont.dll
+C:\QuickFont\QuickFont.Shared\bin\Debug\net6.0-windows\SharpFont.pdb
+C:\QuickFont\QuickFont.Shared\obj\Debug\net6.0-windows\QuickFont.csproj.AssemblyReference.cache
+C:\QuickFont\QuickFont.Shared\obj\Debug\net6.0-windows\QuickFont.GeneratedMSBuildEditorConfig.editorconfig
+C:\QuickFont\QuickFont.Shared\obj\Debug\net6.0-windows\QuickFont.AssemblyInfoInputs.cache
+C:\QuickFont\QuickFont.Shared\obj\Debug\net6.0-windows\QuickFont.AssemblyInfo.cs
+C:\QuickFont\QuickFont.Shared\obj\Debug\net6.0-windows\QuickFont.csproj.CoreCompileInputs.cache
+C:\QuickFont\QuickFont.Shared\obj\Debug\net6.0-windows\QuickFont.csproj.CopyComplete
+C:\QuickFont\QuickFont.Shared\obj\Debug\net6.0-windows\QuickFont.dll
+C:\QuickFont\QuickFont.Shared\obj\Debug\net6.0-windows\refint\QuickFont.dll
+C:\QuickFont\QuickFont.Shared\obj\Debug\net6.0-windows\QuickFont.pdb
+C:\QuickFont\QuickFont.Shared\obj\Debug\net6.0-windows\ref\QuickFont.dll
