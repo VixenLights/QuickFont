@@ -39,13 +39,13 @@
 
   
 	<ItemGroup>
-	  <PackageReference Include="OpenTK" Version="4.7.5">
+	  <PackageReference Include="OpenTK" Version="4.7.7">
 	    <IncludeAssets></IncludeAssets>
 	  </PackageReference>
 	</ItemGroup>
 
   
 	<ItemGroup>
-	  <ProjectReference Include="..\SharpFontShared\SharpFont.csproj" />
+	  <ProjectReference Include="..\..\SharpFont\Source\SharpFontShared\SharpFont.csproj" />
 	</ItemGroup>
 </Project>
