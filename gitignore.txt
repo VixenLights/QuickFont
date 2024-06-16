@@ -1,0 +1,15 @@
+bin/
+obj/
+*.pdb
+_ReSharper*
+/*.exe
+/*.exe.*
+*.user
+*.suo
+/Release
+/Release64
+Debug64
+Debug
+/.vs
+/x64
+FodyWeavers.xsd

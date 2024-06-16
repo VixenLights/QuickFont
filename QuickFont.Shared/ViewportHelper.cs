@@ -70,7 +70,7 @@ namespace QuickFont
         /// </summary>
         public static void UpdateCurrentViewport()
         {
-            //OpenTK.Graphics.GL.GraphicsContext.Assert();
+            //GraphicsContext.Assert();
             int[] viewportInts = new int[4];
 
             GL.GetInteger(GetPName.Viewport, viewportInts);

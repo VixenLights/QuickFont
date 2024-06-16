@@ -9,9 +9,6 @@ using OpenTK.Graphics.ES20;
 using OpenTK.Graphics.OpenGL4;
 #endif
 
-//using OpenTK.Graphics;
-
-
 namespace QuickFont
 {
     /// <summary>
