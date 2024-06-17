@@ -10,6 +10,7 @@
 	   <ExtrasEnableImplicitWpfReferences>true</ExtrasEnableImplicitWpfReferences>
 	   <ExtrasEnableImplicitWinFormsReferences>true</ExtrasEnableImplicitWinFormsReferences>
 	   <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	   <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   
